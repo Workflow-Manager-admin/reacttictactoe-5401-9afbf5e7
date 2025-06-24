@@ -1,0 +1,38 @@
+.ttt-board {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--primary-light, #e3f2fd);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(50, 80, 160, 0.08);
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ttt-row {
+  display: flex;
+  gap: 8px;
+}
+
+.ttt-cell {
+  width: 72px;
+  height: 72px;
+  background: #fff;
+  border: 2px solid var(--primary-dark, #1976d2);
+  font-size: 2.65rem;
+  font-weight: 600;
+  color: var(--primary-dark, #1976d2);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #eee3;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+
+.ttt-cell:disabled {
+  cursor: not-allowed;
+  background: #f6f8fa;
+  color: #bdbdbd;
+  border-color: #e0e0e0;
+}

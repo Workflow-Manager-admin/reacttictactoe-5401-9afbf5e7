@@ -1,10 +1,103 @@
 :root {
-  --base-light: #00ffff;
-  --base-dark: #00008b;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  /* App brand/theming overrides */
+  --primary-dark: #1976d2;
+  --primary-light: #e3f2fd;
+  --secondary: #424242;
+  --accent: #ffc107;
+  --base-light: #f7fafd;
+  --base-dark: #f0f4f7;
+  --text-color: #222222;
+  --text-secondary: #5a5a5a;
+  --border-color: #cfd8dc;
 }
+
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
 
 body {
   margin: 0;
@@ -15,11 +108,187 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
+
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
 
 .navbar {
   background-color: var(--base-dark);
@@ -35,6 +304,94 @@ body {
   z-index: 100;
 }
 
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
+
 .logo {
   font-size: 1.25rem;
   font-weight: 600;
@@ -43,9 +400,185 @@ body {
   gap: 8px;
 }
 
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
+
 .logo-symbol {
   color: var(--base-light);
 }
+
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
 
 .container {
   max-width: 900px;
@@ -54,6 +587,94 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
 
 .hero {
   padding-top: 120px;
@@ -65,11 +686,187 @@ body {
   gap: 24px;
 }
 
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
+
 .subtitle {
   color: var(--base-light);
   font-weight: 500;
   font-size: 1.1rem;
 }
+
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
 
 .title {
   font-size: 3.5rem;
@@ -78,6 +875,94 @@ body {
   margin: 0;
 }
 
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
+
 .description {
   font-size: 1.1rem;
   line-height: 1.5;
@@ -85,6 +970,94 @@ body {
   max-width: 600px;
   margin-bottom: 16px;
 }
+
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
 
 .btn {
   background-color: var(--base-light);
@@ -98,11 +1071,275 @@ body {
   transition: background-color 0.2s ease;
 }
 
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
+
 .btn:hover {
   background-color: #7691ff;
 }
+
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
 
 .btn-large {
   padding: 12px 24px;
   font-size: 1.1rem;
 }
+
+body {
+  background-color: var(--base-light);
+  color: var(--text-color);
+}
+
+/* App root */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--base-light);
+}
+
+/* Navbar (unchanged, but make modern light theme tweaks) */
+.navbar {
+  background: #fff;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo .logo-symbol {
+  color: var(--accent);
+}
+
+/* Modern container for main game */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 104px;
+  min-height: 80vh;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.score {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 4px #e3e6e8cc;
+}
+.score-x {
+  border: 2px solid var(--primary-dark);
+}
+.score-o {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.score-draw {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.status-label {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  min-height: 1.6rem;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Board.css imported as module for board styling */
